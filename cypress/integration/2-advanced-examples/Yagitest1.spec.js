@@ -1,9 +1,11 @@
-describe('yagi', () => {
-    it('Does not shit', () => {
-      cy.visit('https://sv.wikipedia.org/wiki/Ryssland')
-      cy.get('.vector-search-box-input')
-      .type('test').should('have.value', 'test')
-      .type('{enter}')
 
+describe('Runstenar', () => {
+    it('Does not shit', () => {
+      cy.visit('https://sv.wikipedia.org/wiki/Portal:Huvudsida')
+      cy.get('.vector-search-box-input')
+      .type('viking').should('have.value', 'viking')
+      .type('{enter}')
+      cy.get('[id=Runstenar]').click()
+      
     })
   })
