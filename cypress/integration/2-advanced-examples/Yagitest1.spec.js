@@ -1,5 +1,5 @@
 
-describe('Runstenar', () => {
+describe('Runestones', () => {
     it('navigate to runstenar section on viking wiki', () => {
       cy.visit('https://sv.wikipedia.org/wiki/Portal:Huvudsida')
       cy.get('.vector-search-box-input')
