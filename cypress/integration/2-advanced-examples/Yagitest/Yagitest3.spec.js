@@ -4,7 +4,7 @@ describe('Semantik', () => {
       cy.get('.vector-search-box-input')
       .type('språk').should('have.value', 'språk')
       .type('{enter}')
-      cy.get('[id=Semantik]').click()
+      cy.get('[id=Semantik]').click(
 
 
       
