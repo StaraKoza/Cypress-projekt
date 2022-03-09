@@ -4,7 +4,7 @@ describe('Turism', () => {
       cy.get('.vector-search-box-input')
       .type('makedonien').should('have.value', 'makedonien')
       .type('{enter}')
-      cy.get('[id=Turism]').click(
+      cy.get('[id=Turism]').click()
 
 
       

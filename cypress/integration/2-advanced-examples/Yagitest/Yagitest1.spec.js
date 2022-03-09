@@ -5,7 +5,7 @@ describe('Runstenar', () => {
       cy.get('.vector-search-box-input')
       .type('viking').should('have.value', 'viking')
       .type('{enter}')
-      cy.get('[id=Runstenar]').click(
+      cy.get('[id=Runstenar]').click()
 
 
       
