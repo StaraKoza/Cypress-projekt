@@ -1,10 +1,9 @@
-describe('Infrastruktur', () => {
-    it('navigera till infrastruktur sektionen i sverige wiki', () => {
-      cy.visit('https://sv.wikipedia.org/wiki/Portal:Huvudsida')
-      cy.get('.vector-search-box-input')
-      .type('sverige').should('have.value', 'sverige')
-      .type('{enter}')
-      cy.get('[id=Infrastruktur]').click()
+describe('Recept', () => {
+    it('hitta favorit recept', () => {
+      cy.visit('https://www.mathem.se/recept')
+      cy.get('[id=main-search]')
+      .type('bolognese').should('have.value', 'bolognese')
+      cy.get('a:contains(Pappardelle Bolognese)').should('be.visible').click({force: true})
 
 
       

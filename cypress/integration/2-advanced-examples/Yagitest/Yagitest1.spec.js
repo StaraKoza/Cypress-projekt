@@ -6,6 +6,7 @@ describe('Runstenar', () => {
       .type('viking').should('have.value', 'viking')
       .type('{enter}')
       cy.get('[id=Runstenar]').click()
+      
 
 
       
