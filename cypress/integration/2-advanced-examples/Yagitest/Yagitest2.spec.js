@@ -4,7 +4,7 @@ describe('Etymologi', () => {
       cy.get('.vector-search-box-input')
       .type('författare').should('have.value', 'författare')
       .type('{enter}')
-      cy.get('[id=Etymologi]').click()
+      cy.get('[id=Etymologi]').click(
 
       
       
