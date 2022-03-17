@@ -1,5 +1,5 @@
 describe('Bitola', () => {
-    it('nagigera till övrigt sektionen i bitola ', () => {
+    it('navigera till övrigt sektionen i bitola ', () => {
       cy.visit('https://sv.wikipedia.org/wiki/Portal:Huvudsida')
       cy.get('.vector-search-box-input')
       .type('bitola').should('have.value', 'bitola')
